@@ -8,7 +8,7 @@ if(!isset($_SESSION['correo'])){
 
 $correo = $_SESSION['correo'];
 
-include('lib');
+include('lib.php');
 
 $datos = SUBTRAER_INFORMACION($correo);
 
