@@ -24,9 +24,9 @@ CONECTADO($correo);
 <html>
 <head>
 	<meta charset="utf-8">
-	<title><?php print '$nombre $apellido'; ?></title>
+	<title><?php echo "$nombre $apellido"; ?></title>
 </head>
 <body>
-	
+
 </body>
 </html>
