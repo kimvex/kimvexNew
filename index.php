@@ -12,7 +12,7 @@
 		<div class="fondoInicioImg" id="fondoInicioImg">
 			<h1 class="h1Kimvex">kimvex</h1>
 			<div class="cajaEntrada">			
-				<form method="post">
+				<form method="post" action="./k/login" name="login">
 					<input type="mail" placeholder="tu_correo@kimvex.com" value="@kimvex.com" required id="correo" class="correo">
 					<input type="password" placeholder="Contraseña" id="contra" class="contra" required>
 					<input type="submit" value="Entrar" class="entrar">
