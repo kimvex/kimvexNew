@@ -71,3 +71,31 @@ html,body{
 	text-shadow: 3px 3px 10px #000;
 	box-shadow: 3px 3px 10px #000;
 }
+
+.pieInicio{
+	width: 100%;
+	height: 5%;
+	text-align: center;
+	background: #35465c;
+	position: absolute;
+	bottom: 0px;
+}
+
+.pieInicioLista{
+	margin: 0;
+}
+
+.inicioItem{
+	display: inline-block;
+}
+
+.inicioItem a{
+	text-decoration: none;
+	color: white;
+	padding: .5em;
+	display: block;
+}
+
+.inicioItem a:hover{
+	text-decoration: underline;
+}
