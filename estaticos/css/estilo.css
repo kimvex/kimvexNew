@@ -1,0 +1,73 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+}
+@import url(https://fonts.googleapis.com/css?family=Corben:400,700);
+
+/* Pagina de inicio index */
+.fondoInicio{
+	width: 100%;
+	height: 100%;
+	background: #34D9A1;
+}
+
+.fondoInicioImg{
+	width: 100%;
+	height: 100%;
+	background: no-repeat center center fixed;
+	background-size: cover;
+}
+
+.cajaEntrada{
+	width: 25%;
+	height: 25%;
+	/*background: #35465c;*/
+	border-radius: 5px;
+	position: absolute;
+	top: 37.5%;
+	left: 37.5%;
+}
+
+.correo{
+	width: 95%;
+	border: 0px;
+	border-bottom: 1px solid;
+	border-radius:5px 5px 0px 0px;
+	padding: 1em 0.5em;
+	text-align: right;
+}
+
+.contra{
+	width: 95%;
+	border: 0px;
+	border-radius: 0px 0px 5px 5px;
+	padding: 1em 0.5em;
+	margin-bottom: .5em; 
+	text-align: right;
+}
+
+.entrar{
+	width: 100%;
+	background: white;
+	border: 0px;
+	padding: 1em;
+}
+
+.correo,.contra:focus{
+	outline: 0;
+}
+
+.h1Kimvex{
+	font-family: 'Corben', cursive;
+	font-weight: 700;
+	top: 15%;
+	right: 41%;
+	font-size: 4em;
+	text-transform: uppercase;
+	color: white;
+	position: absolute;
+	text-transform: center;
+	text-shadow: 3px 3px 10px #000;
+	box-shadow: 3px 3px 10px #000;
+}
