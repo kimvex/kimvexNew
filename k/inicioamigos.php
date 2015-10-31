@@ -1,8 +1,6 @@
 <?php 
 session_start();
 
-include('config.php');
-
 if(!isset($_SESSION['correo'])){
 	print "<meta http-equiv='Refresh' content='1:url=../index'>";
 	die;
