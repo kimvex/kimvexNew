@@ -22,7 +22,7 @@ CONECTADO($correo);
 <html>
 <head>
 	<meta charset="utf-8">
-	<title><?php echo "$nombre $apellido"; ?></title>
+	<title><?php print "$nombre $apellido"; ?></title>
 </head>
 <body>
 	<?php print "$correo";?>
