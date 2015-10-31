@@ -1,0 +1,4 @@
+Options -Multiviews
+RewriteEngine on
+RewriteRule ^([^\.\?]+)(\?.*)?$ $1.php
+RewriteRule ^([^\.\?]+)(\?.*)?$ $1.html
