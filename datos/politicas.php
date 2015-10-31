@@ -83,16 +83,16 @@ Kimvex se reserva los derechos a modificar esta política de privacidad en el mo
 				<a href="../index">Ir al inicio</a>
 			</li>			
 			<li class="inicioItem">
-				<a href="datos/quienes">¿Quienes somos?</a>
+				<a href="quienes">¿Quienes somos?</a>
 			</li>
 			<li class="inicioItem">
-				<a href="datos/quieres">¿Quieres ser parte de nosotros?</a>
+				<a href="quieres">¿Quieres ser parte de nosotros?</a>
 			</li>
 			<li class="inicioItem">
-				<a href="datos/terminos">Términos y Condiciones</a>
+				<a href="terminos">Términos y Condiciones</a>
 			</li>
 			<li class="inicioItem">
-				<a href="datos/politicas">Políticas de privacidad</a>
+				<a href="politicas">Políticas de privacidad</a>
 			</li>
 		</ul>
 	</footer>
