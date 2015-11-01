@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded',function(e){
 		});
 	}
 
-	document.getElementById('contenedorPub').scrollf({
+	$('#contenedorPub').scrollf({
 		url: 'mas.php'
 	});
 });
