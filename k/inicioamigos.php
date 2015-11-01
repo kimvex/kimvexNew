@@ -59,7 +59,7 @@ CONECTADO($correo);
 	</section>
 	<aside class="barraDerecha">
 		<ul class="menus">
-			<a href="" class="itemPerfil">
+			<a href="index" class="itemPerfil">
 				<li class="item itemPerfil"></li>
 			</a>
 			<li class="item"></li>

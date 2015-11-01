@@ -1,3 +1,11 @@
+<?php 
+	session_start();
+	if(isset($_SESSION['correo'])){
+		print "<meta http-equiv='Refresh' content='1;url=./k/index'>";
+		die;
+	}
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
