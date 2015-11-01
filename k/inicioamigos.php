@@ -6,6 +6,8 @@ if(!isset($_SESSION['correo'])){
 	die;
 }
 
+unset($_SESSION['cargadas']);
+
 $correo = $_SESSION['correo'];
 
 include('lib.php');
@@ -31,7 +33,7 @@ CONECTADO($correo);
 </head>
 <body>
 	<nav class="menuBuscar"></nav>
-	<section class="contenedorCompleto">
+	<section class="contenedorCompleto" id="contenedorPub">
 		<?php 
 			$q1 = "select * from cuadernoamigos where correo='".$correo."' ORDER BY ID DESC limit 0,10";
 			mysql_select_db($dbname);

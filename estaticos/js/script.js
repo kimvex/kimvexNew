@@ -4,4 +4,21 @@ document.addEventListener('DOMContentLoaded',function(e){
 		var numero = Math.round(Math.random()*20);
 	}
 	document.getElementById('fondoInicioImg').style.backgroundImage = 'url(estaticos/img/inicio/'+numero+'.jpg)';
+
+	$.fn.scrollf = function(k){
+		var u = this;
+
+		window.addEventListener('scroll', function(){
+			estadoTop = window.top;
+			alturaDOM = document.height;
+			alturaVentana = window.height;
+			alturaFinal = alturaDOM - alturaVentana;
+
+			url = k.url;
+			tag = k.tag;
+			$.get('mas.php',function(datos){
+				document.getElementById('contenedorPub').innerHTML = datos;
+			}).
+		});
+	}
 });
