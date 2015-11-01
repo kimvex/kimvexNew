@@ -23,9 +23,9 @@ CONECTADO($correo);
 <head>
 	<meta charset="utf-8">
 	<title><?php print "$nombre $apellido"; ?></title>
-	<link rel="stylesheet" type="text/css" href="estaticos/css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="estaticos/css/estilo.css">
-	<script type="text/javascript" src="estaticos/js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="../estaticos/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../estaticos/css/estilo.css">
+	<script type="text/javascript" src="../estaticos/js/script.js"></script>
 </head>
 <body>
 	<nav class="menuBuscar"></nav>
