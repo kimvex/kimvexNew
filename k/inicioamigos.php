@@ -30,6 +30,13 @@ CONECTADO($correo);
 	<script src="../estaticos/lib/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="../estaticos/js/script.js"></script>
 	<?php include('../estaticos/css/css.php'); ?>
+	<script>
+		$(document).ready(function(){
+			$("#contenedorPub").scrollf({
+				url: 'mas.php'
+			});
+		});
+	</script>
 </head>
 <body>
 	<nav class="menuBuscar"></nav>
