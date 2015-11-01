@@ -8,16 +8,25 @@ document.addEventListener('DOMContentLoaded',function(e){
 	$.fn.scrollf = function(k){
 		var u = this;
 
-		window.addEventListener('scroll', function(){
-			estadoTop = window.top;
+		$(window).on('scroll', function(){
+			/*estadoTop = window.top;
 			alturaDOM = document.height;
 			alturaVentana = window.height;
+			alturaFinal = alturaDOM - alturaVentana;*/
+			estadoTop = $(window).scrollTop();
+			alturaDOM = $(document).height();
+			alturaVentana = $(window).height();
 			alturaFinal = alturaDOM - alturaVentana;
 
-			url = k.url;
-			$.get(url,function(datos){
-				document.getElementById('contenedorPub').innerHTML = datos;
-			});
+			if(estadoTop >= alturaFinal){
+				url = k.url;
+				/*$.get(url,function(datos){
+					document.getElementById('contenedorPub').innerHTML = datos;
+				});*/
+				$(u).load(url);
+				//var dms = u.parent();
+				//dms.appdend();
+			}
 		});
 	}
 
