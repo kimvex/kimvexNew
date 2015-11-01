@@ -25,6 +25,7 @@ CONECTADO($correo);
 	<title><?php print "$nombre $apellido"; ?></title>
 	<link rel="stylesheet" type="text/css" href="../estaticos/css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../estaticos/css/estilo.css">
+	<script src="../estaticos/lib/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="../estaticos/js/script.js"></script>
 	<?php include('../estaticos/css/css.php'); ?>
 </head>
