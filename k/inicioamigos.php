@@ -48,7 +48,7 @@ CONECTADO($correo);
 				<?php print $f1['texto']; ?>
 			</section>
 			<footer class="pieDePublicacion">
-				
+				<?php print $f1['ID']; ?>
 			</footer>
 		</article>
 		<?php
