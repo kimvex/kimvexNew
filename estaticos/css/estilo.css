@@ -237,3 +237,7 @@ html,body{
 	font-family: 'Montserrat', sans-serif;
 	word-wrap: break-word;
 }
+.sectionPublicacion img{
+	width: 100%;
+	height: 100%;
+}
