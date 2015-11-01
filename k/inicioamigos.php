@@ -35,10 +35,23 @@ CONECTADO($correo);
 			mysql_select_db($dbname);
 			$r1 = mysql_query($q1);
 			while($f1=mysql_fetch_array($r1))
-			{
+			{ 
 				if($f1['de'] != $correo){
-					print $f1['de'];
-					print $f1['texto'];
+		?>
+		<article class="publicacion">
+			<header class="cabeceraPublicacion">
+				<img src="../estaticos/img/inicio/19.jpg" class="imagenPerfilPublicacion">
+				<h3><?php print $f1['nombre'];?></h3>
+				<span><?php print $f1['fecha']; ?></span>
+			</header>
+			<section class="sectionPublicacion">
+				<?php print $f1['texto']; ?>
+			</section>
+			<footer class="pieDePublicacion">
+				
+			</footer>
+		</article>
+		<?php
 				}
 			}
 		?>
