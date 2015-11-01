@@ -15,10 +15,13 @@ document.addEventListener('DOMContentLoaded',function(e){
 			alturaFinal = alturaDOM - alturaVentana;
 
 			url = k.url;
-			tag = k.tag;
-			/*$.get('mas.php',function(datos){
+			$.get(url,function(datos){
 				document.getElementById('contenedorPub').innerHTML = datos;
-			});*/
+			});
 		});
 	}
+
+	document.getElementById('contenedorPub').scrollf({
+		url: 'mas.php'
+	});
 });
