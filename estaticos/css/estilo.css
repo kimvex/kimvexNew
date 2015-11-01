@@ -189,7 +189,6 @@ html,body{
 
 .item{
 	border-radius: 50%;
-	background: blue;
 	border: 3px solid #000;
 	width: 50%;
 	height: 10%;
@@ -237,7 +236,11 @@ html,body{
 	font-family: 'Montserrat', sans-serif;
 	word-wrap: break-word;
 }
-img{
+.sectionPublicacion img{
 	width: 100%;
 	height: 100%;
+}
+.emoji{
+	width: 1.5em;
+	height: 1.5em;
 }

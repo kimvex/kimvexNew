@@ -26,6 +26,7 @@ CONECTADO($correo);
 	<link rel="stylesheet" type="text/css" href="../estaticos/css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../estaticos/css/estilo.css">
 	<script type="text/javascript" src="../estaticos/js/script.js"></script>
+	<?php include('../estaticos/css/css.php'); ?>
 </head>
 <body>
 	<nav class="menuBuscar"></nav>
@@ -59,27 +60,27 @@ CONECTADO($correo);
 	<aside class="barraDerecha">
 		<ul class="menus">
 			<a href="" class="itemPerfil">
-				<li class="item"></li>
-				<li class="item"></li>
-				<li class="item"></li>
-				<li class="item"></li>
-				<li class="item"></li>
-				<li class="item"></li>
-				<li class="item"></li>
+				<li class="item itemPerfil"></li>
 			</a>
+			<li class="item"></li>
+			<li class="item"></li>
+			<li class="item"></li>
+			<li class="item"></li>
+			<li class="item"></li>
+			<li class="item"></li>
 		</ul>
 	</aside>
 	<aside class="barraIzquierda">
 		<ul class="menus">
 			<a href="" class="itemPerfil">
 				<li class="item"></li>
-				<li class="item"></li>
-				<li class="item"></li>
-				<li class="item"></li>
-				<li class="item"></li>
-				<li class="item"></li>
-				<li class="item"></li>
 			</a>
+			<li class="item"></li>
+			<li class="item"></li>
+			<li class="item"></li>
+			<li class="item"></li>
+			<li class="item"></li>
+			<li class="item"></li>
 		</ul>
 	</aside>
 </body>
