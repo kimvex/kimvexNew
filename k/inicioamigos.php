@@ -31,13 +31,15 @@ CONECTADO($correo);
 	<nav class="menuBuscar"></nav>
 	<section class="contenedorCompleto">
 		<?php 
-			$q1 = "select * from cuadernoamigos where de='".$correo."' ORDER BY ID DESC limit 0,10";
+			$q1 = "select * from cuadernoamigos where correo='".$correo."' ORDER BY ID DESC limit 0,10";
 			mysql_select_db($dbname);
 			$r1 = mysql_query($q1);
 			while($f1=mysql_fetch_array($r1))
 			{
-				print $f1['de'];
-				print $f1['texto'];
+				if($f1['de'] != $correo){
+					print $f1['de'];
+					print $f1['texto'];
+				}
 			}
 		?>
 	</section>
