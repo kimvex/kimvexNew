@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded',function(e){
 
 			url = k.url;
 			tag = k.tag;
-			$.get('mas.php',function(datos){
+			/*$.get('mas.php',function(datos){
 				document.getElementById('contenedorPub').innerHTML = datos;
-			}).
+			});*/
 		});
 	}
 });
