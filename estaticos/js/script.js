@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded',function(e){
 				$(u).load(url);
 				//var dms = u.parent();
 				//dms.appdend();
+				console.log(estadoTop,alturaVentana,alturaDOM,alturaFinal);
 			}
 		});
 	}
