@@ -235,4 +235,5 @@ html,body{
 	margin-left: 2.5%;
 	padding: 1% 0%;
 	font-family: 'Montserrat', sans-serif;
+	word-wrap: break-word;
 }

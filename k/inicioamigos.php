@@ -40,7 +40,7 @@ CONECTADO($correo);
 		?>
 		<article class="publicacion">
 			<header class="cabeceraPublicacion">
-				<img src="../estaticos/img/inicio/19.jpg" class="imagenPerfilPublicacion">
+				<img src="../estaticos/img/imgperfil/<?php print $f1['de']?>.jpg" class="imagenPerfilPublicacion">
 				<h3><?php print $f1['nombre'];?></h3>
 				<span><?php print $f1['fecha']; ?></span>
 			</header>
