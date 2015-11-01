@@ -28,15 +28,44 @@ CONECTADO($correo);
 	<script type="text/javascript" src="estaticos/js/script.js"></script>
 </head>
 <body>
-	<?php 
-		$q1 = "select * from comentarios where para='".$correo."' ORDER BY ID DESC limit 0,10";
-		mysql_select_db($dbname);
-		$r1 = mysql_query($q1);
-		while($f1=mysql_fetch_array($r1))
-		{
-			print $f1['de'];
-			print $f1['texto'];
-		}
-	?>
+	<nav class="menuBuscar"></nav>
+	<section class="contenedorCompleto">
+		<?php 
+			$q1 = "select * from cuadernoamigos where para='".$correo."' ORDER BY ID DESC limit 0,10";
+			mysql_select_db($dbname);
+			$r1 = mysql_query($q1);
+			while($f1=mysql_fetch_array($r1))
+			{
+				print $f1['de'];
+				print $f1['texto'];
+			}
+		?>
+	</section>
+	<aside class="barraDerecha">
+		<ul class="menus">
+			<a href="" class="itemPerfil">
+				<li class="item"></li>
+				<li class="item"></li>
+				<li class="item"></li>
+				<li class="item"></li>
+				<li class="item"></li>
+				<li class="item"></li>
+				<li class="item"></li>
+			</a>
+		</ul>
+	</aside>
+	<aside class="barraIzquierda">
+		<ul class="menus">
+			<a href="" class="itemPerfil">
+				<li class="item"></li>
+				<li class="item"></li>
+				<li class="item"></li>
+				<li class="item"></li>
+				<li class="item"></li>
+				<li class="item"></li>
+				<li class="item"></li>
+			</a>
+		</ul>
+	</aside>
 </body>
 </html>
