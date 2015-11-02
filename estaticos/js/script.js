@@ -21,10 +21,7 @@ document.addEventListener('DOMContentLoaded',function(e){
 			if(estadoTop >= alturaFinal){
 				url = k.url;
 				$.get(url,function(datos){
-					var u = $('#contenedorPub');
-					console.log(u);
-					//document.getElementById('contenedorPub').innerHTML = datos;
-					$('#contenedorPub').append(datos);
+					document.getElementById('contenedorPub').innerHTML = u + datos;
 				});
 				
 			}
@@ -54,7 +51,7 @@ $(document).ready(function(){
 			if(estadoTop >= alturaFinal){
 				url = k.url;
 				$.get(url,function(datos){
-					document.getElementById('contenedorPub').innerHTML = datos;
+					document.getElementById('contenedorPub').innerHTML = u + datos;
 				});
 			}
 		});
