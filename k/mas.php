@@ -13,6 +13,7 @@
 	$r1 = mysql_query($q1);
 	while($f1=mysql_fetch_array($r1))
 	{ 
+		print $_SESSION['cargadas']+"dd";
 		if($f1['de'] != $correo){
 ?>
 <link rel="stylesheet" type="text/css" href="../estaticos/css/normalize.css">
