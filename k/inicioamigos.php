@@ -6,7 +6,7 @@ if(!isset($_SESSION['correo'])){
 	die;
 }
 
-//unset($_SESSION['cargadas']);
+unset($_SESSION['cargadas']);
 
 $correo = $_SESSION['correo'];
 
