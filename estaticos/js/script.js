@@ -56,10 +56,9 @@ $(document).ready(function(){
 				/*$.get(url,function(datos){
 					document.getElementById('contenedorPub').innerHTML = datos;
 				});*/
-				//$(u).load(url);
+				$(u).load(url);
 				var dms = u.parent();
-				dms.append(url);
-				console.log(estadoTop,alturaVentana,alturaDOM,alturaFinal);
+				$(u).load(url);
 			}
 		});
 	}
