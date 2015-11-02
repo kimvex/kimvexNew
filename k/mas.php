@@ -1,5 +1,6 @@
 <?php 
 	session_start();
+	print "Hola";
 	include('config.php');
 	$correo = $_SESSION['correo'];
 
