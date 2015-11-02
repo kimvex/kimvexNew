@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded',function(e){
 	document.getElementById('fondoInicioImg').style.backgroundImage = 'url(estaticos/img/inicio/'+numero+'.jpg)';
 
 	$.fn.scrollf = function(k){
-		var u = this;
+		var u = $(this);
 
 		$(window).on('scroll', function(){
 			/*estadoTop = window.top;
@@ -34,4 +34,33 @@ document.addEventListener('DOMContentLoaded',function(e){
 	$('#contenedorPub').scrollf({
 		url: 'mas.php'
 	});
+});
+
+$(document).ready(function(){
+
+	$.fn.scrollf = function(k){
+		var u = $(this);
+
+		$(window).on('scroll', function(){
+			/*estadoTop = window.top;
+			alturaDOM = document.height;
+			alturaVentana = window.height;
+			alturaFinal = alturaDOM - alturaVentana;*/
+			estadoTop = $(window).scrollTop();
+			alturaDOM = $(document).height();
+			alturaVentana = $(window).height();
+			alturaFinal = alturaDOM - alturaVentana;
+
+			if(estadoTop >= alturaFinal){
+				url = k.url;
+				/*$.get(url,function(datos){
+					document.getElementById('contenedorPub').innerHTML = datos;
+				});*/
+				$(u).load(url);
+				//var dms = u.parent();
+				//dms.appdend();
+				console.log(estadoTop,alturaVentana,alturaDOM,alturaFinal);
+			}
+		});
+	}
 });
