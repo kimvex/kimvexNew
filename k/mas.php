@@ -14,6 +14,8 @@
 	{ 
 		if($f1['de'] != $correo){
 ?>
+<link rel="stylesheet" type="text/css" href="../estaticos/css/normalize.css">
+<link rel="stylesheet" type="text/css" href="../estaticos/css/estilo.css">
 <article class="publicacion">
 	<header class="cabeceraPublicacion">
 		<img src="../estaticos/img/imgperfil/<?php print $f1['de']?>.jpg" class="imagenPerfilPublicacion">
