@@ -58,7 +58,7 @@ $(document).ready(function(){
 				});*/
 				//$(u).load(url);
 				var dms = u.parent();
-				dms.appdend(url);
+				dms.append(url);
 				console.log(estadoTop,alturaVentana,alturaDOM,alturaFinal);
 			}
 		});
