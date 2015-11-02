@@ -8,9 +8,10 @@
 		$_SESSION['cargadas'] = 10;
 	} 
 	print $_SESSION['cargadas'];
+	$conexion_mysql = mysql_connect($mysql_host,$mysql_user,$mysql_pass);
+	mysql_select_db($mysql_db,$conexion_mysql);
 	$q1 = "select * from cuadernoamigos where correo='".$correo."' ORDER BY ID DESC limit 0,10";
-	mysql_select_db($dbname);
-	$r1 = mysql_query($q1);
+	$r1 = mysql_query($q1,$conexion_mysql);
 	while($f1=mysql_fetch_array($r1))
 	{ 
 		print $_SESSION['cargadas']+"dd";
