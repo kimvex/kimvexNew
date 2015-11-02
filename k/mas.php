@@ -3,7 +3,9 @@
 	include('config.php');
 	$correo = $_SESSION['correo'];
 
-	if(!isset($_SESSION['cargadas'])) $_SESSION['cargadas'] = 10;
+	if(!isset($_SESSION['cargadas'])){
+		$_SESSION['cargadas'] = 10;
+	} 
 
 	$q1 = "select * from cuadernoamigos where correo='".$correo."' ORDER BY ID DESC limit ".$_SESSION['cargadas'].",10";
 	mysql_select_db($dbname);
