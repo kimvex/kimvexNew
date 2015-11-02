@@ -28,5 +28,5 @@
 <?php
 		}
 	}
-	$_SESSION['cargada']+=10;
+	$_SESSION['cargadas']+=10;
 ?>
