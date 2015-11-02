@@ -53,12 +53,9 @@ $(document).ready(function(){
 
 			if(estadoTop >= alturaFinal){
 				url = k.url;
-				/*$.get(url,function(datos){
+				$.get(url,function(datos){
 					document.getElementById('contenedorPub').innerHTML = datos;
-				});*/
-				$(u).load(url);
-				var dms = u.parent();
-				$(u).load(url);
+				});
 			}
 		});
 	}
