@@ -7,7 +7,7 @@
 		$_SESSION['cargadas'] = 10;
 	} 
 
-	$q1 = "select * from cuadernoamigos where correo='".$correo."' ORDER BY ID DESC limit ".$_SESSION['cargadas'].",10";
+	$q1 = "select * from cuadernoamigos where correo='".$correo."' ORDER BY ID DESC limit 0,10";
 	mysql_select_db($dbname);
 	$r1 = mysql_query($q1);
 	while($f1=mysql_fetch_array($r1))
