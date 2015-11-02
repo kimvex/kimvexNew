@@ -23,7 +23,8 @@ document.addEventListener('DOMContentLoaded',function(e){
 				$.get(url,function(datos){
 					var u = document.getElementById('contenedorPub');
 					console.log(u);
-					document.getElementById('contenedorPub').innerHTML = u + datos;
+					//document.getElementById('contenedorPub').innerHTML = datos;
+					$('#contenedorPub').append(datos);
 				});
 				
 			}
