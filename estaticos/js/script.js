@@ -39,19 +39,14 @@ $(document).ready(function(){
 		var u = $(this);
 
 		$(window).on('scroll', function(){
-			/*estadoTop = window.top;
+			estadoTop = window.top;
 			alturaDOM = document.height;
 			alturaVentana = window.height;
-			alturaFinal = alturaDOM - alturaVentana;*/
-			estadoTop = $(window).scrollTop();
-			alturaDOM = $(document).height();
-			alturaVentana = $(window).height();
 			alturaFinal = alturaDOM - alturaVentana;
 
 			if(estadoTop >= alturaFinal){
 				url = k.url;
 				$.get(url,function(datos){
-					//document.getElementById('contenedorPub').innerHTML = u + datos;
 					$(u).append(datos);
 				});
 			}
