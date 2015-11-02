@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded',function(e){
 			if(estadoTop >= alturaFinal){
 				url = k.url;
 				$.get(url,function(datos){
-					document.getElementById('contenedorPub').innerHTML = datos;
+					document.getElementById('contenedorPub').innerHTML = u + datos;
 				});
 				
 			}
